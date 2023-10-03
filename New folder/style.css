@@ -1,0 +1,264 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: monospace;
+    background-color:#1a0538;
+    
+}
+nav{
+    
+    background: black;
+    height: 90px;
+    width:100%;
+    
+}
+.logo{
+    color: Blue;
+    font-size: 40px;
+    line-height: 85px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding-right: 40px;
+}
+nav ul li a{
+    color: white;
+    font: 18px;
+    padding: 2px 12px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: red;
+    transition: 0.5s;
+
+}
+.ser{
+    
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    padding-left: 150px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-size: 30px;
+    border: white solid;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+.oser{
+   padding-left: 300px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#photostyle{
+   margin-top: 100px;
+   color: white;
+   font-size: 30px;
+   cursor: pointer;
+   background-color:black ;
+   border: white;
+   
+   
+}
+.h2pt{
+    font-weight: bold;
+    font-size: 80px;
+    padding-left: 300px;
+}
+span{
+    margin-left: 90px;
+    padding-left: 30px;
+    margin-top: 80px;
+    
+}
+span img{
+     transform: scale(1);
+     transition: 0.3s ease-in-out;
+     cursor: pointer;
+    
+}
+ span:hover img{
+    transform: scale(1.5);
+ }
+.vdpt{
+    width: 100%;
+    color: white;
+    font-size: 100px;
+    margin-top: 50px;
+    background-color: black;
+    font-weight: bold;
+    border: white;
+}
+video{
+    margin-left: 150px;
+    margin-right: 180px;
+    margin-top: 90px;
+    
+}
+.con{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    height: 400px;
+    border: white solid 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ft{
+    margin-left: 120px;
+    margin-top: 80px;
+    margin-right: 40px;
+    float: left;
+
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        background: black;
+        height: 190px;
+        width: 100%;
+    }
+    .logo{
+        color: Blue;
+        font-size: 30px;
+        line-height: 70px;
+        padding: 0 90px;
+        font-weight: bold;
+    
+}
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 3px;
+    padding-right: 30px;
+}
+nav ul li a{
+    color: white;
+    font: 15px;
+    padding: 1px 11px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: red;
+    transition: 0.5s;
+
+}
+.ser{
+    
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    padding-left: 90px;
+    padding-right: 70px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    font-size: 20px;
+    border: white solid;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.oser{
+    padding-left: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ #photostyle{
+    display: block;
+    margin-top: 100px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    background-color:black ;
+    border: white;
+    
+    
+ }
+ .h2pt{
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 90px;
+}
+span{
+    margin-left: 20px;
+    padding-left: 30px;
+    margin-top: 80px;
+    
+}
+span img{
+     transform: scale(1);
+     transition: 0.3s ease-in-out;
+     cursor: pointer;
+    
+}
+.vdpt{
+    width: 100%;
+    color: white;
+    font-size: 50px;
+    margin-top: 50px;
+    background-color: black;
+    font-weight: bold;
+    border: white;
+}
+video{
+    display: block;
+    margin: 1em auto;
+    width: 80%;
+
+
+}
+.con{
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    height: 600px;
+    border: white solid 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ft{
+    margin-left: 110px;
+    margin-top: 80px;
+    margin-right: 40px;
+    float: left;
+
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+}
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project</title>
+        <link rel="stylesheet" type="text/css" href="slide.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+       
+    </head>
+<body>
+    <nav>
+        <label class="logo">TAN </label>
+          
+        </label>
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="#photostyle">PHOTOS</a></li>
+                <li><a href="photo.html">BUY</a></li>
+                <li><a href="#ser">ABOUT</a></li>
+                <li><a href="#CONTACT">CONTACT</a></li>
+            </ul>
+    </nav>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="imge/BB.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+    
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="imge/JJ.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="imge/HH.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <hr>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <br> 
+            <br>
+                <br>
+                    <br>
+
+        <div class="ser" id="ser">
+          <p class="serP">
+            <h1 class="oser">OUR SERVICE</h1><br><br>
+            Our service is creating the animation,manga and anime video<br>
+            for your marketing
+
+          </p>
+        </div>
+             
+
+        <div id="photostyle">
+          <h2 class="h2pt" >OUR EXAMPLE PHOTOS</h2><br><br>
+          <span><img src="imge/AA.jpg" ></span>
+          <span><img src="imge/GG.jpg" ></span>
+          <span><img src="imge/TTjpg.jpg"></span>
+          <span><img src="imge/nn.jpg" ></span>
+          <span><img src="imge/cc.jpg"></span>
+          <span><img src="imge/vv.jpg"></span>
+        </div>
+              <br>
+                  <br>
+                      <br>
+        <div class="ser">
+          <p>
+            <h1>
+              <marquee>
+              Let's advertise with animated video for more fun
+            </marquee></h1>
+          </p>
+
+        </div>
+              <br>
+                  <br>
+                      <br>
+        <div class="vdpt">
+          <p align="center">Our Example Video</p>
+          <video controls   loop width="auto" height="auto">
+          <source src="imge/gg.mp4" type="video/mp4">
+          <source src="imge/gg.WebM" >
+      
+          </video>
+        </div>
+          <br>
+              <br>
+                  <br>
+
+        <div class="con">
+          <div class="ft">
+            <p><h2>CONTACT US</h2><br><br>
+              +959783867009<br><br>
+              No() erafdafewafd/fdfd<br>
+            </p>
+
+          </div>
+          <div class="ft">
+            <p><h2>
+              blah blah blah
+            </h2><br><br>
+            GGGGGGGGGGGG<br>
+            GGGGGGGGGGGG<br>
+          </p>
+          </div>
+          <div class="ft">
+            <p>
+              <h2>OUR RESULT</h2>
+              <br><br>
+              Your success <br>
+              is <br>
+              our success
+            </p>
+          </div>
+
+        </div>
+        <footer>
+          <p>&copy; TAN ANIMATION</p>
+      </footer>
+        
+
+        
+        
+        <!-- -------------------------------------------------- -->
+        
+        <script>
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        
+        </script>
+
+
+</body>
+</html>
